@@ -238,3 +238,9 @@
     background-color: $bg;
   }
 }
+@media screen and (max-width: $mobileLandscape) {
+  .navigacion {
+    width: 100%;
+    max-width: 300px;
+  }
+}
