@@ -1,0 +1,12 @@
+@use '../sass/variables' as *;
+
+.footer {
+  height: 50px;
+  background-color: darken($bg, 3%);
+  display: grid;
+  place-items: center;
+
+  p {
+    color: $light;
+  }
+}

@@ -1,0 +1,25 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: georgian;
+  src: url('../assets/fonts/bpg_glaho_sylfaen.ttf');
+}
+
+$georgianFont: georgian;
+$mainFont: 'Open Sans', sans-serif;
+
+//colors
+$bg: #132a38;
+$bgLight: #1d3444;
+$bgLighter: hsl(206, 36%, 26%);
+
+$logoColor: hsl(208, 23%, 75%);
+$light: #c5d9e2;
+$gray: #718190;
+
+//breakpoints
+$contentMaxWidth: 1440px;
+$tablet: 1024px;
+$mobileLandscape: 770px;
+$mobilePortrait: 480px;

@@ -1,0 +1,79 @@
+@use '../sass/variables' as *;
+
+.header {
+  background-color: $bg;
+}
+.content {
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.search {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  background-color: $bgLight;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .icon {
+    position: absolute;
+    color: $light;
+    font-size: 18px;
+    width: 30px;
+  }
+  input {
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $light;
+  }
+}
+
+.notification {
+  color: $light;
+  font-size: 22px;
+}
+
+.profile {
+  height: 40px;
+  background-color: $bgLight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 20px;
+  img {
+    border-radius: 50%;
+    height: 100%;
+  }
+  .icon {
+    width: 35px;
+    color: $light;
+  }
+}
+
+@media screen and (max-width: $mobileLandscape) {
+  .content {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+  }
+  .notification,
+  .profile {
+    display: none;
+  }
+  .search {
+    max-width: none;
+    grid-column-start: 2;
+  }
+}

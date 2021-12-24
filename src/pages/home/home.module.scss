@@ -1,0 +1,18 @@
+@use '../../sass/variables' as *;
+.homepage {
+  background-color: $bg;
+}
+.homepage > .content {
+  max-width: $contentMaxWidth;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr auto;
+}
+
+@media screen and (max-width: $tablet) {
+  .homepage > .content {
+    grid-template-columns: 1fr;
+  }
+}
