@@ -181,3 +181,37 @@
     height: 250px;
   }
 }
+
+@media screen and (max-width: $mobilePortrait) {
+  .aside {
+    height: 585px;
+    padding: 20px 10px 0 10px;
+  }
+
+  .card {
+    cursor: pointer;
+    margin-bottom: 15px;
+    height: 160px;
+    display: flex;
+    gap: 18px;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100px;
+      border-radius: 10px;
+    }
+    .textContainer {
+      padding-right: 15px;
+      h3 {
+        color: $light;
+        font-size: 15px;
+      }
+      h4 {
+        font-size: 13px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+  }
+}

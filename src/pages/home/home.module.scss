@@ -16,3 +16,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: $mobilePortrait) {
+  .homepage > .content {
+    padding: 0 10px;
+  }
+}
